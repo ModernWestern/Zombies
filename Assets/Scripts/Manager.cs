@@ -57,6 +57,9 @@ public class Manager : MonoBehaviour
 
 	void Awake()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
+
 		new Hero (CharacterNames ()); // Hero
 
 		// MANAGERS
